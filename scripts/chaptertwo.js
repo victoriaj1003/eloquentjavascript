@@ -44,11 +44,15 @@ for (i = 0; i <= 100; i++) {
 console.log('exercise: chessboard');
 
 var size = 8;
+var evenRow = '# ';
+var oddRow = ' #';
 
 for (i = 0; i < size; i++) {
   if (i % 2 === 0) {
-    console.log('# ');
+    console.log(evenRow);
+  } else if (i % 2 !== 0) {
+    console.log(oddRow);
   } else {
-    console.log(' #');
+    console.log('wat?');
   }
 };
