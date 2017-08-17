@@ -43,16 +43,45 @@ for (i = 0; i <= 100; i++) {
 // Chess board - Write a program that creates a string that represents an 8×8 grid, using newline characters to separate lines. At each position of the grid there is either a space or a “#” character. The characters should form a chess board.
 console.log('exercise: chessboard');
 
-var size = 8;
-var evenRow = '# ';
-var oddRow = ' #';
 
-for (i = 0; i < size; i++) {
-  if (i % 2 === 0) {
-    console.log(evenRow);
-  } else if (i % 2 !== 0) {
-    console.log(oddRow);
+var str = ""
+
+for (j = 0; j < 8; j++) {
+  if (j % 2 === 0) {
+    str = str + "\n"
   } else {
-    console.log('wat?');
+    str = str + "\n"
   }
+
+      for (i=0; i < 8; i++) {
+           if ((i + j)% 2===0 ) {
+                str = str + " "
+           } else {
+                str = str + "#"
+           }
+      };
 };
+   console.log(str);
+
+
+// using a variable to change the size of the chessboard...
+
+   var str = ""
+   var size = 16
+
+   for (j = 0; j < size; j++) {
+     if (j % 2 === 0) {
+       str = str + "\n"
+     } else {
+       str = str + "\n"
+     }
+
+         for (i=0; i < size; i++) {
+              if ((i + j)% 2===0 ) {
+                   str = str + " "
+              } else {
+                   str = str + "#"
+              }
+         };
+   };
+      console.log(str);
