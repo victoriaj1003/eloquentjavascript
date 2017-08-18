@@ -67,14 +67,11 @@ for (j = 0; j < 8; j++) {
 // using a variable to change the size of the chessboard...
 
    var str = ""
-   var size = 16
+   var size = 4
 
    for (j = 0; j < size; j++) {
-     if (j % 2 === 0) {
-       str = str + "\n"
-     } else {
-       str = str + "\n"
-     }
+    str = str + "\n"
+
 
          for (i=0; i < size; i++) {
               if ((i + j)% 2===0 ) {
